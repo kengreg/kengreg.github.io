@@ -1,0 +1,146 @@
+{
+  "sections": {
+    "form": {
+      "welcome": {
+        "en": "Enter the source of your new player...",
+        "ja": "あなたの新プレイヤーの源を入力してください。。。"
+      },
+      "password": {
+        "en": "Write your code",
+        "ja": "コードを入力してください"
+      }
+    },
+    "header": {
+      "title": {
+        "en": "Portafolio",
+        "ja": "ポートフォリオ"
+      },
+      "subtitle": {
+        "en": "Recently added rallies:",
+        "ja": "現在参加できるスタンプラリー"
+      },
+      "lang": {
+        "en": "日本語",
+        "ja": "English"
+      },
+      "topMenu": {
+        "top": {
+          "en": "Top",
+          "ja": "トップ"
+        },
+        "stamps": {
+          "en": "Stamp Rallies",
+          "ja": "スタンプラリー"
+        },
+        "howToPlay": {
+          "en": "How to Play",
+          "ja": "遊び方"
+        },
+        "campaign": {
+          "en": "Campaigns",
+          "ja": "キャンペーン"
+        }
+      },
+      "currentRalliesTitle": {
+        "en": "Your next adventure is waiting! ",
+        "ja": " 次の冒険が待ってるよ！次の挑戦しよう！"
+      }
+    },
+    "body": {
+      "jobs": {
+        "title": {
+          "en": "I've had the privilege to work with these companies, turning ambitious ideas into successful digital products.",
+          "ja": "これらの企業と一緒に働き、野心的なアイデアを成功したデジタル製品に変える機会に恵まれました。"
+        },
+        "languagesTitle": {
+          "en": "Languages",
+          "ja": "言語"
+        },
+        "toolstitle": {
+          "en": "Tools",
+          "ja": "ツール"
+        },
+        "featuredTitle": {
+          "en": "Featured Works",
+          "ja": "注目作品"
+        },
+        "companiesTitle": {
+          "en": "Companies List",
+          "ja": "会社リスト"
+        },
+        "modalFeaturedTitle": {
+          "en": "This work was made while working for this company: ",
+          "ja": "この作品は、この会社で勤務中に制作されました:"
+        },
+        "modalFeaturedlink": {
+          "en": "Click here to see more works for this company",
+          "ja": "こちらをクリックして、この会社の他の作品をご覧ください。"
+        }
+      },
+      "general": {
+        "languages": {
+          "en": "Languages",
+          "ja": "使用言語"
+        },
+        "duties": {
+          "en": "Duties",
+          "ja": "業務内容"
+        },
+        "numberOfProjects": {
+          "en": "Number of projects:",
+          "ja": "管理下プロジェクト:"
+        },
+        "achivements": {
+          "en": "Achivements",
+          "ja": "実績"
+        },
+        "tools": {
+          "en": "Tools, Softwares, Frameworks",
+          "ja": "ツール◦ソフトウェア◦フレイムワーク"
+        },
+        "gallery": {
+          "en": "Gallery",
+          "ja": "ギャラリー"
+        },
+        "website": {
+          "en": "Website",
+          "ja": "公式サイト"
+        }
+      }
+    },
+    "btn": {
+      "btn_enter_portfolio": {
+        "en": "Check Player Data",
+        "ja": "プレイヤーデータを確認せよ"
+      },
+      "btn_project": {
+        "en": "View Project",
+        "ja": "細かい情報"
+      },
+      "btn_viewCompany": {
+        "en": "View Company projects",
+        "ja": "公式の作品一覧へ"
+      },
+      "visit_company": {
+        "en": "Visit Company Website",
+        "ja": "公式サイトへ"
+      },
+      "back": {
+        "en": "Back",
+        "ja": "戻る"
+      },
+      "more": {
+        "en": "More information",
+        "ja": "詳細"
+      },
+      "enter": {
+        "en": "Enter here",
+        "ja": "登録"
+      },
+      "apply": {
+        "en": "Apply here",
+        "ja": "参加する"
+      }
+    }
+  }
+}

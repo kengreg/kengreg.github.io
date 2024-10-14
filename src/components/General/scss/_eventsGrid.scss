@@ -1,0 +1,49 @@
+.eventsGrid-container {
+  .eventsGrid-inner {
+    padding: 0 0.5em;
+  }
+  .eventsGrid-title {
+    border-bottom: 1px solid #ebebeb;
+    padding: 0.5em 0;
+    margin-bottom: 0.5em;
+  }
+  .eventsGrid-content {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    gap: 1rem;
+    li {
+      width: 100%;
+      // max-width: calc(33% - 0.33rem);
+      .event-card {
+        background: var(--primary);
+        padding: 0 0 1em 0;
+      }
+      img {
+        border-radius: 10px;
+      }
+      h6 {
+        padding: 0.5em 0;
+      }
+      .eventsGrid-description {
+        height: 40px;
+        margin-bottom: 0.5em;
+      }
+    }
+    .btn-link {
+      background: var(--primary);
+      border-radius: 5px;
+      display: block;
+      padding: 0.5em;
+      color: var(--text-inverse);
+      float: right;
+    }
+  }
+}
+
+@media all and (max-width: 640px) {
+  .eventsGrid-container .eventsGrid-content {
+    li {
+      width: 100%;
+    }
+  }
+}

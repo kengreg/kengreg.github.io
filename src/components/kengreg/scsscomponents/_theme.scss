@@ -1,0 +1,163 @@
+$white: whitesmoke;
+$text: #121212;
+$text-inverse: #b3b3b3;
+$black: #121212;
+//FINAL FANTASY MENU UI
+$card-gray: #b3b6c8;
+$card-text-blue: #798792;
+$blue: #141577;
+$blue-menu: #141577;
+$purple: #41427c;
+$bluelight: #66aae0;
+$pink: #f290f5;
+$gray: #62616f;
+$yellow: #f8fa7e;
+
+//------------------------
+$orange: #e3a984;
+$darkblue: #0e696f;
+$green: #9fc19f;
+$brown: #8d6a48;
+$red: #c5001b;
+$secondary: #eccb62;
+$darkpink: #e71bd6;
+$darkyellow: $brown;
+$cream: #fdfaf9;
+
+:root {
+  --black: #{$black};
+  --primary: #5a51fe;
+  --secondary: #{$secondary};
+  --third: #{$darkyellow};
+  --alert: #{$red};
+  --orange: #{$orange};
+  --blue: #{$blue};
+  --bluelight: #{$bluelight};
+  --darkblue: #{$darkblue};
+  --red: #{$red};
+  --success: #{$blue};
+  --green: #{$green};
+  --pink: #{$pink};
+  --purple: #{$purple};
+  --card-gray: #{$card-gray};
+  --gray: #{$gray};
+  --yellow: #{$yellow};
+  --darkyellow: #{$darkyellow};
+  --warning: #{$yellow};
+  --danger: #{$red};
+  --brown: #{$brown};
+  --sucess: #{$blue};
+  --fail: #{$brown};
+  --text: #{$text};
+  --text-inverse: #{$text-inverse};
+  --links: #{$white};
+  --headings: #{$brown};
+  --white: #{$white};
+  --lightgray: #f3f2f1;
+  --darkgray: #555454;
+  --cream: #{$cream};
+  //theme varaibles --------------------------------------
+  --card-shadow: 3px 2px 11px 2px #12162b;
+  --s-radius: 8px;
+  --m-radius: 15px;
+  --lg-radius: 20px;
+  --p-5: 0.5em;
+  --ptb-5: 0.5em 0;
+  --plr-5: 0 0.5em;
+}
+
+@mixin list-rooms() {
+  .list-rooms {
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+      gap: 2%;
+      span {
+        &:nth-child(1) {
+          text-align: right;
+        }
+        &:nth-child(2) {
+          text-align: center;
+          span {
+            transform: scale(2);
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin scrollBar-blue() {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #1b214d;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 2px #65a7c2;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #7ab5cc;
+    border: solid #1b214d;
+    border-width: 3px 2px 3px 2px;
+    border-radius: 3px;
+  }
+}
+
+@mixin scrollBar-gray() {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #e2e2e2;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #d3d3d3;
+    border: solid #d3d3d3;
+    border-width: 3px 2px 3px 2px;
+    border-radius: 3px;
+    // box-shadow: 0 0 4px 2px #434343;
+  }
+}
+
+@mixin menuPanelTextShadow() {
+  text-shadow: 0 3px 2px #121212;
+}
+@mixin panelBlueBg() {
+  // background: rgba(14, 24, 53, 0.9);
+  background: rgba(14, 24, 53, 0.98);
+}
+
+@mixin scoopBackground($color) {
+  background: radial-gradient(circle at 0 0, transparent 15%, $color calc(15%))
+      top left,
+    radial-gradient(circle at 100% 0, transparent 15%, $color calc(15%)) top
+      right,
+    radial-gradient(circle at 0 100%, transparent 15%, $color calc(15%)) bottom
+      left,
+    radial-gradient(circle at 100% 100%, transparent 15%, $color calc(15%))
+      bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+@mixin spanLinesGradient($color1, $color2) {
+  span {
+    display: block;
+    border: none;
+    height: 1px;
+    // background: #f49b22;
+    background: -webkit-gradient(
+      radial,
+      50% 50%,
+      0,
+      50% 50%,
+      350,
+      from($color1),
+      to($color2)
+    );
+  }
+}

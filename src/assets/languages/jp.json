@@ -1,0 +1,59 @@
+{
+  "globalSettings": {
+    "language": "日本語"
+  },
+  "navBar": {
+    "home": "ホーム",
+    "solvingGame": "リアル謎解きイベントとは",
+    "events": "開催中のイベント",
+    "gameDevelopment": "謎解き制作依頼",
+    "services": "トライアドの特徴"
+  },
+  "footer": {
+    "contactUs": "お問い合わせ",
+    "rights": "全著作権所有",
+    "organizer": "主催",
+    "production": "企画•制作",
+    "coop": "協力",
+    "sponsors": "協賛"
+  },
+  "informations": {
+    "title": "参加情報",
+    "placesToGetKit": "謎解きキット受取場所",
+    "date": "期間",
+    "hourly": "探索可能時間",
+    "price": "料金",
+    "buy": "購入",
+    "ticketsellduration": "チケット販売期間",
+    "time": "所要時間",
+    "schedule": "会場／開催日程",
+    "ticketInformation": "チケット情報",
+    "reservationInformation": "予約方法",
+    "people": "人チーム",
+    "start": "スタート",
+    "features": "特徴",
+    "range": "散策範囲",
+    "difficulty": "難易度"
+  },
+
+  "howToPlay": {
+    "title": "遊び方",
+    "step1": "TRIAD謎解きアプリをインストールしてください。",
+    "step2": "キットを受け取り、物語を始めましょう。",
+    "step3": "謎を解き、さまざまな場所へと行ってみましょう。新たな謎との出会いがあることでしょう。",
+    "step4": "アプリと冊子を見ながら全ての謎を解き明かしてゲームクリアを目指しましょう 。"
+  },
+  "stores": {
+    "title": "謎解きキット取扱店情報",
+    "bonus": {
+      "title": "特典店舗情報",
+      "tab1": "参加特典",
+      "tab2": "特典店舗一覧"
+    }
+  },
+
+  "cupons": {
+    "title": "特典店舗情報"
+  },
+  "events": {}
+}

@@ -1,0 +1,87 @@
+@mixin portafolioSidebar() {
+  .list-filter {
+    li {
+      padding: 0.2em;
+      &:hover {
+        p {
+          color: var(--bluelight);
+          transition: 0.3s ease-in all;
+          transform: scale(1.02);
+        }
+      }
+      figure {
+        float: left;
+        width: 25px;
+      }
+      p {
+        @include menuPanelTextShadow();
+      }
+    }
+  }
+
+  .list-galleryGrid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    grid-auto-rows: 200px;
+    overflow: hidden;
+    padding: 0.5em;
+    @include scrollBar-blue();
+    li {
+      margin: 0;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      margin-bottom: 10px;
+      break-inside: avoid;
+      outline: 2px solid white;
+      border-radius: 5px;
+      overflow: hidden;
+      &:nth-child(even) {
+        grid-row-end: span 2;
+      }
+      &:nth-child(6) {
+        grid-row-end: span 3;
+      }
+    }
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@mixin portafolioSidebarMin640() {
+}
+@mixin portafolioSidebarMax768() {
+  .main-buttons {
+    border-bottom: 4px double #353891;
+    margin-bottom: 1em;
+    .btn.scoop {
+      max-width: 210px;
+      width: 48%;
+    }
+  }
+}
+
+@mixin portafolioSidebarMin768() {
+  .portafolio-filter {
+    width: 30%;
+  }
+  .main-buttons {
+    flex-direction: column;
+  }
+}
+
+@mixin portafolioSidebarMin992() {
+  .portafolio-filter {
+    width: 25%;
+  }
+}
+
+@mixin portafolioSidebarMin1200() {
+  .portafolio-filter {
+    width: 22%;
+  }
+}

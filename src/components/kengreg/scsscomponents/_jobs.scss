@@ -1,0 +1,219 @@
+@mixin Jobs() {
+  .portafolio-grid {
+    // background: var(--gray, silver);
+  }
+  .job-grid-container {
+    background: var(--card-gray);
+    border-radius: var(--lg-radius);
+    box-shadow: var(--card-shadow);
+    padding: 2em 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    li {
+      background: linear-gradient(0deg, #9e9da7 -13%, #e0e0e7 15%);
+      text-decoration: none;
+      border-radius: 3px;
+      border: 1px solid #00011c;
+      border-width: 1px 1px 1px 3px;
+      box-shadow: 0 4px 24px rgba(32, 43, 54, 0.08);
+      transform: translateX(0) translateY(0) translateZ(0);
+      transition: all 0.4s ease;
+      .img-wrap {
+        min-height: 185px;
+      }
+      figure {
+        background: white;
+      }
+      &:hover {
+        transform: translateX(0) translateY(-8px) translateZ(0);
+        box-shadow: 0 8px 24px rgba(32, 43, 54, 0.12);
+      }
+    }
+  }
+
+  .job-item {
+    text-align: center;
+    &:hover {
+      opacity: 0.8;
+    }
+    h6 {
+      background: black;
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        color: var(--white);
+        padding: 0 0.3em;
+      }
+    }
+    &[data-country="panama"] {
+      &:before {
+        background: url("https://lh3.googleusercontent.com/d/1rpIJxbvds1zLIrlAU-aAX6pF2MrJs1Bi=w100?authuser=0/view")
+          center center no-repeat;
+        background-size: cover;
+        background-color: black;
+      }
+    }
+    &[data-country="japan"] {
+      &:before {
+        background: url("https://lh3.googleusercontent.com/d/13Nif8Cs8GlhKPkkQqCiGgsaX8t2cpnsr=w100?authuser=0/view")
+          center center no-repeat;
+        background-size: cover;
+        background-color: black;
+      }
+    }
+    &[data-country="india"] {
+      &:before {
+        background: url("https://lh3.googleusercontent.com/d/1S9oczLpqiAgztCHYQnKS5E0CSp4RqLz3=w100?authuser=0/view")
+          center center no-repeat;
+        background-size: cover;
+        background-color: black;
+      }
+    }
+    &:before {
+      content: "";
+      border: 1px solid #e1e1e5;
+      position: absolute;
+      // left: 0;
+      right: 3%;
+      top: -20px;
+      // margin: 0 auto;
+      height: 35px;
+      width: 50px;
+    }
+  }
+
+  .projects-wrap {
+    .back-container {
+      bottom: -1em;
+      box-shadow: 0 0 8px 2px #46bcc5;
+      left: 1em;
+      width: 150px;
+    }
+  }
+
+  .projects {
+    .project-item {
+      background: #00bed1 var(--backgroundImage) center top no-repeat;
+      background-size: contain;
+      box-shadow: 0 6px 10px 2px #8fedea;
+      border: 3px solid white;
+      padding-bottom: 1.5em;
+      // &:hover {
+      //   cursor: pointer;
+      // }
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(0deg, #f1fffb 69%, transparent 121%);
+      }
+      &:after {
+        content: attr(data-year);
+        position: absolute;
+        font-size: 35px;
+        bottom: 1%;
+        right: 3%;
+        opacity: 0.1;
+        font-weight: bold;
+      }
+    }
+    .separator-bottom {
+      border-top: none;
+      border-bottom: 3px double var(--purple);
+      padding: 0.5em 0;
+      margin-bottom: 1.5em;
+    }
+    .project-header {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 1.5em 1em 1.5em 1em;
+      min-height: 135px;
+    }
+    .project-title {
+      color: var(--purple);
+      padding: 0.5em 0;
+    }
+    .project-item-text {
+      padding: 0 1em 0.5em 1em;
+      margin-bottom: 2.2em;
+      overflow-y: auto;
+      @include scrollBar-gray();
+      .project-description {
+        // padding: 0 0 1em 0;
+        // display: -webkit-box;
+        // -webkit-box-orient: vertical;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // -webkit-line-clamp: 3;
+        // max-height: calc(1em * 1.5 * 3);
+        // line-height: 1.5;
+        // height: auto;
+      }
+    }
+  }
+}
+
+@mixin jobsMax640() {
+  .job-grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 30px 5px;
+    li {
+      .img-wrap {
+        min-height: 150px;
+      }
+      figure {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+@mixin jobsMin640() {
+  .portafolio-grid {
+  }
+  .project-item-text {
+    height: 180px;
+  }
+}
+
+@mixin jobsMin768() {
+  .portafolio-grid,
+  .gallery-grid {
+    width: 70%;
+    .job-container {
+      padding: 0 0 0 2%;
+    }
+  }
+  .gallery-details {
+    width: 100%;
+  }
+}
+
+@mixin jobsMin992() {
+  .portafolio-grid,
+  .gallery-grid {
+    width: 75%;
+  }
+  .gallery-details {
+    width: 100%;
+  }
+}
+
+@mixin jobsMin1200() {
+  .portafolio-grid,
+  .gallery-grid {
+    width: 77%;
+  }
+  .gallery-details {
+    width: 100%;
+  }
+}

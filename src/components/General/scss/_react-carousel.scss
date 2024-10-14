@@ -1,0 +1,139 @@
+.events-container {
+  .rec-carousel {
+    .rec-slider,
+    .rec-swipable {
+      width: 100%;
+    }
+    .rec-slider-container,
+    .rec-slider,
+    .rec-swipable,
+    .rec-carousel-item,
+    .rec-item-wrapper {
+      height: 100%;
+    }
+
+    .rec-swipable {
+      // background-color: var(--black);
+    }
+    .rec-item-wrapper {
+      background-color: white;
+      padding: 0 0.5em !important;
+
+      // height: 18.2vw;
+    }
+  }
+  button {
+    background-color: var(--secondary);
+    box-shadow: 0 0 1px 3px var(--secondary);
+    color: var(--container);
+  }
+
+  button:hover,
+  button:active,
+  button:focus {
+    box-shadow: 0 0 1px 3px var(--secondary);
+    background-color: var(--container);
+    color: var(--secondary);
+  }
+  .rec-dot_active {
+    background-color: white;
+  }
+
+  .card {
+    display: inline-block;
+    text-align: center;
+    // padding: 10px;
+    &:hover {
+      opacity: 0.7;
+    }
+    & > a {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      background-color: var(--black);
+      figcaption,
+      .card-img-wrapper {
+        position: absolute;
+      }
+      .card-img-wrapper {
+        // height: 40%;
+        overflow: hidden;
+        position: absolute;
+        // top: 10%;
+        width: 200%;
+        .card-img-top {
+          width: 55%;
+        }
+      }
+      figcaption {
+        height: 40%;
+        padding: 1em;
+        h5 {
+          font-weight: bold;
+          padding: 1em 0;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          span {
+            text-overflow: ellipsis;
+            display: block;
+            font-size: 1em;
+            color: var(--text);
+          }
+        }
+      }
+    }
+  }
+
+  .overlay-card .card-body {
+    // position: absolute;
+    // bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    padding: 0 0.5em;
+    color: white;
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    h5 {
+      height: auto;
+      margin: 5px;
+    }
+    .card-img-top {
+      border-radius: 10px;
+      z-index: -5;
+      width: 100%;
+      height: auto;
+    }
+
+    .card-title,
+    .card-text {
+      // display: flex;
+      color: var(--text);
+      // margin: 10px 0;
+      align-items: center;
+      svg {
+        width: 20px;
+      }
+      p {
+        color: var(--text);
+      }
+      div {
+        // color: white !important;
+      }
+    }
+    .card-informations {
+      padding: 1em 0;
+    }
+    .card-text {
+      display: flex;
+      svg {
+        fill: white;
+      }
+    }
+  }
+}

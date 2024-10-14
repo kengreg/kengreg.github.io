@@ -1,0 +1,61 @@
+:root {
+  --black: #121212;
+  --text: whitesmoke;
+  --primary: whitesmoke;
+  --secondary: #c70000;
+  --thrid: #db4d4d;
+  --alert: #f50f0f;
+  --warning: #f7e461;
+  --sucess: #f7e461;
+  --fail: #525252;
+  --text: whitesmoke;
+  --text-inverse: rgb(32, 32, 32);
+  --links: whitesmoke;
+  --headings: #525252;
+  --white: whitesmoke;
+  --container: rgba(80, 103, 114, 0.4);
+}
+
+//-------------------------------------------------------
+@mixin themeFoxWedding() {
+  .fox_wedding[data-theme="theme-color"] {
+    --primary: whitesmoke;
+    --secondary: #780202;
+    --thrid: #aa764f;
+    --alert: #f50f0f;
+    --warning: #f7e461;
+    --sucess: #f7e461;
+    --fail: #525252;
+    --text-inverse: rgb(32, 32, 32);
+    --links: whitesmoke;
+    --headings: #525252;
+    --white: whitesmoke;
+    --container: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@mixin themeRegentofreiko() {
+  .regentofreiko[data-theme="theme-color"] {
+    --primary: #f2f2f2;
+    --secondary: #c22d28;
+    --thrid: #ff5bae;
+    --gradient1: #e0c294;
+    --gradient2: #a08782;
+    --four: #3c3a97;
+    --five: rgba(111, 50, 81, 0.5);
+    --six: rgba(63, 31, 47, 0.8);
+    --seven: #1f1f1f;
+    --alert: #d2408a;
+    --warning: #f8ffa2;
+    --success: #00fff5;
+    --fail: #d2408a;
+    --text: #f5f5f5;
+    --text-inverse: #000104;
+    --text-secondary: #b09bb5;
+    --links: whitesmoke;
+    --headings: rgba(28, 24, 28, 0.6);
+    --white: #f2f2f2;
+    --container: rgba(28, 24, 28, 0.6);
+    --lines: #2f2f2f;
+  }
+}

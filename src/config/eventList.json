@@ -1,0 +1,11 @@
+{
+  "kengreg": {
+    "name": "kengreg",
+    "urlName": "portafolio-online",
+    "label": "Portafolio Online Kengreg",
+    "landingPage": true,
+    "hint": false,
+    "share": false,
+    "special": false
+  }
+}

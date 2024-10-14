@@ -1,0 +1,33 @@
+$media-queries: (
+  "max320": "all and (max-width: 320px)",
+  "max480": "all and (max-width: 480px)",
+  "min480": "all and (min-width: 481px)",
+  "max576": "all and (max-width: 575.98px)",
+  "min576": "all and (min-width: 576px)",
+  "max640": "all and (max-width: 640px)",
+  "min480max640": "all and (min-width: 481px) and (max-width: 639px)",
+  "min480max567": "all and (min-width: 481px) and (max-width: 567px)",
+  "min640": "all and (min-width: 641px)",
+  "max768": "all and (max-width: 767px)",
+  "min768": "all and (min-width: 768px)",
+  "min576max768": "all and (min-width: 576px) and (max-width: 767.98px)",
+  "min768max992": "all and (min-width: 768px) and (max-width: 991.98px)",
+  "min992max1200": "all and (min-width: 992px) and (max-width: 1199.98px)",
+  "min992": "all and (min-width: 992px)",
+  "max992": "all and (max-width: 991px)",
+  "max1024": "all and (max-width: 1023px)",
+  "min1024": "all and (min-width: 1024px)",
+  "max1200": "all and (max-width: 1199.98px)",
+  "min1200": "all and (min-width: 1200px)",
+  "min1600": "all and (min-width: 1600px)",
+);
+
+@mixin mediaquery($media) {
+  @if map-has-key($media-queries, $media) {
+    @media #{map-get($media-queries, $media)} {
+      @content;
+    }
+  } @else {
+    @warn "The media query '#{$media}' is not defined in the map.";
+  }
+}
