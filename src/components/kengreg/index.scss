@@ -644,6 +644,11 @@ ul {
   margin: 0 auto;
 }
 
+.twitter-grid {
+  justify-content: center;
+  gap: 10px;
+}
+
 //Media queries
 @include mediaquery("max480") {
 }
@@ -665,6 +670,9 @@ ul {
       no-repeat;
   }
   @include jobsMax640();
+  .twitter-grid {
+    grid-template-columns: repeat(auto-fill, 320px);
+  }
 }
 @include mediaquery("min640") {
   .portafolio-container {
@@ -676,6 +684,9 @@ ul {
   @include portafolioHeaderMin640();
   @include portafolioSidebarMin640();
   @include jobsMin640();
+  .twitter-grid {
+    grid-template-columns: repeat(auto-fill, 350px);
+  }
 }
 
 @include mediaquery("max768") {
@@ -688,6 +699,9 @@ ul {
 
   @include portafolioSidebarMax768();
   @include portafolioHeaderMax768();
+  .twitter-grid {
+    grid-template-columns: repeat(auto-fill, 310px);
+  }
 }
 
 @include mediaquery("min768") {
@@ -739,4 +753,7 @@ ul {
   @include portafolioHeaderMin1200();
   @include portafolioSidebarMin1200();
   @include jobsMin1200();
+  .twitter-grid {
+    grid-template-columns: repeat(auto-fill, 370px);
+  }
 }

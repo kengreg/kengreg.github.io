@@ -14,6 +14,7 @@ import Sidebar from "../../components/kengreg/Sidebar";
 import Jobs from "../../components/kengreg/Jobs";
 import { Menu } from "@headlessui/react";
 import GridGallery from "../../components/kengreg/GridGallery";
+import Tweet from "../../components/kengreg/twitter";
 import("../../components/kengreg/index.scss");
 const Contents = ({ setNavBar, eventOption, urlName, introScreen }) => {
   // setting up the language and loading
@@ -337,20 +338,11 @@ const Contents = ({ setNavBar, eventOption, urlName, introScreen }) => {
                           </h2>
                         </article>
                       </article>
-                      <a
-                        href="https://twitter.com/intent/tweet?button_hashtag=スパーク謎&ref_src=twsrc%5Etfw"
-                        className="twitter-hashtag-button w-full margin-auto"
-                        data-size="large"
-                        data-lang="ja"
-                        data-show-count="false"
-                      >
-                        Tweet #スパーク謎
-                      </a>
-                      <script
-                        async
-                        src="https://platform.twitter.com/widgets.js"
-                        charSet="utf-8"
-                      ></script>
+                      <article className="w-full grid twitter-grid">
+                        <Tweet tweetID="1837783032910303708" />
+                        <Tweet tweetID="1832306135338242366" />
+                        <Tweet tweetID="1834870925382107397" />
+                      </article>
                     </section>
                   ))}
               </section>
