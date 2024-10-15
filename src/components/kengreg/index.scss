@@ -204,7 +204,7 @@ ul {
   // }
 }
 .portafolio-body {
-  padding: 3% 2% 2% 2%;
+  padding: 3% 2% 1% 2%;
 }
 @include portafolioHeader();
 @include portafolioSidebar();
@@ -607,6 +607,10 @@ ul {
     .column-1 {
       padding: 0 1em;
       width: 40%;
+      h6,
+      h6 + p > a {
+        color: var(--yellow);
+      }
       .content {
         padding-bottom: 3em;
       }
@@ -652,6 +656,7 @@ ul {
     .modal-grid {
       overflow-y: auto;
       overflow-x: hidden;
+      padding: 1em 0.5em;
       // max-height: 75%;
     }
   }

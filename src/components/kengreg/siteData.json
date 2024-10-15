@@ -105,6 +105,10 @@
         "website": {
           "en": "Website",
           "ja": "公式サイト"
+        },
+        "snsFeedbacks": {
+          "en": "We utilized social media platforms such as Twitter to consistently collect feedback and explore ways to improve our products. Below is a list of the positive feedback we received at Spheremystica Inc. (Axell Inc.) while developing nazotoki games and stamp rallies.",
+          "ja": "私たちは、TwitterなどのSNSを利用して、常にフィードバックを収集し、製品を改善する方法を模索しました。以下は、ナゾトキゲームやスタンプラリーを開発している間に、Spheremystica Inc.（Axell Inc.）で受け取った良いフィードバックのリストです。"
         }
       }
     },

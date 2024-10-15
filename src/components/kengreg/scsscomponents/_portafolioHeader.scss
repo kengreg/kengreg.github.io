@@ -194,7 +194,11 @@
     }
   }
   .header-country .header-country-wrap figure {
+    float: none;
     width: 100%;
+  }
+  .navbar > .btn span {
+    right: 70%;
   }
 }
 

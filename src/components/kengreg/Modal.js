@@ -34,6 +34,8 @@ import {
   ember,
   reacticon,
   node,
+  vue,
+  typescript,
 } from "./svg";
 // import { Gallery } from "react-grid-gallery";
 // import Lightbox from "yet-another-react-lightbox-lite";
@@ -106,6 +108,8 @@ const Modal = ({
     ember: ember,
     reacticon: reacticon,
     node: node,
+    vue: vue,
+    typescript: typescript,
   };
   const [indexImage, setIndexImage] = useState(-1);
 
@@ -144,7 +148,7 @@ const Modal = ({
                   {project.url && project.url !== "" && (
                     <>
                       <h6
-                        className={`display-inline font-bold text-inverse ${TextSizeHandler(
+                        className={`display-inline font-bold ${TextSizeHandler(
                           12,
                           12,
                           12,
@@ -154,7 +158,7 @@ const Modal = ({
                         {translatedData.sections.body.general.website}:
                       </h6>
                       <p
-                        className={`display-inline text-inverse pl-2 ${TextSizeHandler(
+                        className={`display-inline pl-2 ${TextSizeHandler(
                           12,
                           12,
                           12,

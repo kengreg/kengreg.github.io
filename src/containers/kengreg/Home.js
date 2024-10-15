@@ -95,9 +95,9 @@ const Contents = ({ setNavBar, eventOption, urlName, introScreen }) => {
     //     setIsLoading(false);
     //   }, 3000);
     // } else {
-    //   // Fetch data with the provided JSON name
-    // }
+    // Fetch data with the provided JSON name
     fetchData(jsonName);
+    // }
   };
 
   const fetchData = async (jsonName) => {
@@ -105,7 +105,7 @@ const Contents = ({ setNavBar, eventOption, urlName, introScreen }) => {
     setError(null); // Clear previous errors
     try {
       const response = await fetch(
-        `https://firebasestorage.googleapis.com/v0/b/tomitakenbridge.appspot.com/o/${jsonName}.json?alt=media&token=bfc4bbe3-3590-486c-acaa-6571dc0934a2`
+        `https://firebasestorage.googleapis.com/v0/b/tomitakenbridge.appspot.com/o/${jsonName}.json?alt=media&token=935ac114-4a9d-4740-9c34-1f7916e3a20b`
       );
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -318,6 +318,41 @@ const Contents = ({ setNavBar, eventOption, urlName, introScreen }) => {
                     )}
                   </article>
                 </section>
+                {toggleGallery ||
+                  (currentHeader === 0 && (
+                    <section className="comments container-max-width margin-auto pt-3 pb-6 pl-5 pr-5">
+                      <article className="panel-container-grid w-full">
+                        <article
+                          className={` panel-menu panel-menu-gridTitle container-max-width`}
+                        >
+                          <h2
+                            className={`section-title text-inverse text-center pt-2 pr-2 pl-2 pb-2 ${TextSizeHandler(
+                              17,
+                              17,
+                              20,
+                              20
+                            )}`}
+                          >
+                            {translatedData.sections.body.general.snsFeedbacks}
+                          </h2>
+                        </article>
+                      </article>
+                      <a
+                        href="https://twitter.com/intent/tweet?button_hashtag=スパーク謎&ref_src=twsrc%5Etfw"
+                        className="twitter-hashtag-button w-full margin-auto"
+                        data-size="large"
+                        data-lang="ja"
+                        data-show-count="false"
+                      >
+                        Tweet #スパーク謎
+                      </a>
+                      <script
+                        async
+                        src="https://platform.twitter.com/widgets.js"
+                        charSet="utf-8"
+                      ></script>
+                    </section>
+                  ))}
               </section>
             </section>
           </article>
